@@ -1,0 +1,88 @@
+.HomeFirstLayer {
+    background: rgba(37, 170, 225, 1);
+    color: white;
+    padding: 50px;
+  }
+  
+  .Heading {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 106px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  
+  .Description {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+.HomeSecondLeyar{
+    background: rgba(235, 251, 255, 1);
+    color: black;
+    padding: 50px;
+
+}  
+.SecondLayerDesription{
+    font-family: Neue Haas Grotesk Display Pro;
+font-size: 16px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0.03em;
+text-align: left;
+
+
+}
+.Logo{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+
+}
+.DetailsLogo{
+    background: rgba(218, 233, 255, 1);
+    border-radius: 50px;
+    width: fit-content;
+    padding: 9px;
+
+}
+.CompanyDetails{
+    border: solid 1px black;
+    margin: 6px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 400px;
+}
+.Horizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.Seemore{
+    color: rgba(37, 170, 225, 1);
+    text-decoration: underline;
+
+}
+.HorizontalTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: auto;
+    
+}
+.HomeThirdLayer{
+    background: rgba(37, 170, 225, 1);
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    overflow: auto;
+
+}
