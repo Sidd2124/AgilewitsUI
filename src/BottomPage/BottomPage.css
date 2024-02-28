@@ -1,0 +1,69 @@
+.TopLayerBottomPage{
+    background: rgba(50, 45, 45, 1);
+    padding: 50px;
+    color: white;
+   
+    position: relative;
+    width: 973px;
+
+}
+.LinkRemove{
+    text-decoration: none;
+    color: white;
+}
+
+p:hover{
+   
+ 
+   text-decoration: underline;
+   text-decoration-color:rgba(37, 170, 225, 1) ;
+}
+
+h3:hover{
+   
+ 
+    text-decoration: underline;
+    text-decoration-color:rgba(37, 170, 225, 1) ;
+ }
+
+.BottomPageLogo{
+    height: 100px;
+}
+
+.BottomPageSecondLayer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+
+.BottomPageSocialMediaLogo{
+    height: 30px;
+   display: flex;
+   justify-content: center;
+   margin-top: 45px;
+    
+}
+
+.BottomPageSocialMediaIcons{
+    display: flex;
+    gap: 10px;
+  
+}
+
+
+.Rows{
+    display: flex;
+    gap: 20px;
+}
+
+.ServicesBottomContainer{
+    width: 300px;
+    padding: 20px;
+    
+}
+
+.email{
+    color: rgba(37, 170, 225, 1);
+
+}

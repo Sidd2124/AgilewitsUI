@@ -19,8 +19,8 @@ const DropDown=()=>{
     <div className="DropDownFirstLayer">
         <div className="DropDownSecondLayer">
 <h1>EXPLORE</h1>
-<h1>EXPLORE</h1>
-<h1>EXPLORE</h1>
+<h1>SERVICE</h1>
+<h1>PRODUCT</h1>
         </div>
 
         <div className="DropDownSecondLayer">

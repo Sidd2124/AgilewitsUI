@@ -1,0 +1,8 @@
+.AboutTopLayer{
+    display: flex;
+}
+
+.AboutpageSecondLayer{
+    height: 100vh;
+    overflow-y: auto;
+}

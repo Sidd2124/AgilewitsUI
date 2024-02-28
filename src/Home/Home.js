@@ -16,6 +16,8 @@ import FourthClient from './Client4.png'
 import { useContext } from "react"
 
 import Context from '../Context/Context'
+ 
+import BotttomPage from '../BottomPage/BottomPage'
 
 import BigIcone from './CompanyLargecone.png'
 
@@ -26,6 +28,8 @@ import Counsukting from './Counsulting.png'
 import Development from './AppDevelopment.png'
 
 import  Training from './Trainig.png'
+
+import PartneresOpinion from "../PartenrsOpinion/PartnersOpinion"
 
 let ServiceInformation=[{
     ServiceName:"Counsulting",
@@ -108,6 +112,9 @@ solutions for clients worldwide</p>
     <p>CLIENTS</p>
 </div>
    </div>
+
+  <PartneresOpinion/>
+   <BotttomPage/>
             </div>
             <img className="ChatLogo" src={Chat} alt="ChatLogo"/>
          

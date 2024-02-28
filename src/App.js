@@ -5,7 +5,11 @@ import './App.css';
 
 import Home from './Home/Home'
 
+import AboutUs from './AboutUs/Aboutus'
+
 import Context from './Context/Context'
+
+
 
 
 
@@ -31,6 +35,7 @@ UpdateDropDownStatus=()=>{
    <BrowserRouter>
    <Switch>
     <Route exact path="/" component={Home}/>
+    <Route exact path="/About" component={AboutUs}/>
     <Route exact path="/NothingFound" component={()=><div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}><h1>Nothing Found</h1><Link to="/"><button>Home</button></Link></div>}/>
     <Redirect to="/NothingFound"/>
 

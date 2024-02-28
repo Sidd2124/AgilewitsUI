@@ -81,6 +81,8 @@ p{
 .Filter{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    animation: scrollLeft 10s linear infinite;
+    
   
 }
 .ClientServiceTag{
@@ -106,4 +108,34 @@ color: white;
 .AchievmentsItems{
  gap: 20px;
  text-align: center;
+}
+.ClientResponce{
+    background: rgba(235, 251, 255, 1);
+    text-align: center;
+    padding: 20px;
+
+}
+a{
+    color:  rgba(37, 170, 225, 1);
+
+}
+.ClientrCompanyName{
+    color: rgba(120, 120, 120, 1);
+    
+}
+.ClientReport{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    animation: scrollLeft 10s linear infinite;
+    
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move container to the left */
+    }
 }

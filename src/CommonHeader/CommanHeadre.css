@@ -1,0 +1,21 @@
+.HeaderTopLayer{
+    background: rgb(85, 191, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: White;
+    padding: 20px;
+    width: 1036px;
+   
+
+}
+
+.PrimeIcone{
+height: 300px;
+color: black;
+}
+
+.PageName{
+    margin: 50px;
+    font-size: 70px;
+}
