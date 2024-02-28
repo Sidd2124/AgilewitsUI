@@ -17,6 +17,33 @@ import { useContext } from "react"
 
 import Context from '../Context/Context'
 
+import BigIcone from './CompanyLargecone.png'
+
+import Service from '../CompanyServices/CompanyServices'
+
+import Counsukting from './Counsulting.png'
+
+import Development from './AppDevelopment.png'
+
+import  Training from './Trainig.png'
+
+let ServiceInformation=[{
+    ServiceName:"Counsulting",
+    ServiceDesription:"Our consulting services involve a wide range of services like Business Intelligence, IBM DataStage, Oracle BI, Big Data Analytics, Data Science",
+    ServiceLogo:Counsukting
+
+},{
+    ServiceName:"APP Developement",
+    ServiceDesription:"Agilewit Solutions is incorporated as a Technology Consulting services and Software product development firm. Head quartered in Texas and Offshore development centers in India, we have involved in creating strategy, implementing, deploying, and supporting a wide range of solutions for clients worldwide",
+    ServiceLogo:Development
+
+},{
+    ServiceName:"Training",
+    ServiceDesription:"With a motive to provide an opportunity to the IT aspirants,to learn the software technologies and tools from the experienced and expert group of software professionals,",
+    ServiceLogo:Training
+
+},]
+
 const Home=()=>{
     const{IsActive,SetDropDownStatus}=useContext(Context)
     const DropDownStatus=()=>{
@@ -46,18 +73,30 @@ We get it done</h3>
 <p className="ClientServiceDescription">Agilewit Solutions is incorporated as a Technology Consulting services and Software product development firm. Head quartered in Texas and Offshore development centers in India, we have involved in creating strategy, implementing, deploying, and supporting a wide range of 
 solutions for clients worldwide</p>
 </div>
-<div className="Row">
+<div className="Row Filter">
 <img src={FirstClient} alt="ClientCompanyLogo"/>
-<img src={FirstClient} alt="ClientCompanyLogo"/>
-<img src={FirstClient} alt="ClientCompanyLogo"/>
-<img src={FirstClient} alt="ClientCompanyLogo"/>
+<img src={SecondClient} alt="ClientCompanyLogo"/>
+<img src={ThirdClient} alt="ClientCompanyLogo"/>
+<img src={FourthClient} alt="ClientCompanyLogo"/>
 </div>
 
 <h1 className="ClientServiceTag">See what  we can do for you</h1>
+<div className="Row">
+    <img className="BigLogo" src={BigIcone} alt="Logo"/>
+    <div className="ServiceDetails">
+   {ServiceInformation.map((each)=><Service Details={each}/>)}
+
+   </div>
+  
+</div>
+
+
       </div>
    
             </div>
             <img className="ChatLogo" src={Chat} alt="ChatLogo"/>
+         
+
             </div>
          </div>
      
