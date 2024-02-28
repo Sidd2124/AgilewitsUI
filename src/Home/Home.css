@@ -1,145 +1,58 @@
-.HomeFirstLayer {
-    background: rgba(37, 170, 225, 1);
-    color: white;
-    padding: 70px;
-  }
-  
-  .Heading {
-    font-family: Neue Haas Grotesk Display Pro;
-    font-size: 66px;
-    font-weight: 700;
-    line-height: 106px;
-    letter-spacing: 0.03em;
-    text-align: left;
-  }
-  
-  .Description {
-    font-family: Neue Haas Grotesk Display Pro;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 41px;
-    letter-spacing: 0.03em;
-    text-align: left;
-  }
-.HomeSecondLeyar{
-    background: rgba(235, 251, 255, 1);
-    color: black;
-    padding: 70px;
-
-}  
-.SecondLayerDesription{
-    font-family: Neue Haas Grotesk Display Pro;
-font-size: 16px;
-font-weight: 500;
-line-height: 25px;
-letter-spacing: 0.03em;
-text-align: left;
-
-
-}
-.Logo{
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-
-}
-.DetailsLogo{
-    background: rgba(218, 233, 255, 1);
-    border-radius: 50px;
-    width: fit-content;
-    padding: 9px;
-
-}
-.AuthorLogo{
-    border-radius: 50px;
-    height: 80px;
-}
-.CompanyDetails{
-    border: solid 1px black;
-    margin: 6px;
-    border-radius: 4px;
-    padding: 10px;
-    width: 400px;
-}
-.Horizontal{
+.ToplAYER{
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+}
+
+.Title{
+    padding: 100px;
+  height: 100vh;
+    background: rgba(37, 170, 225, 1);
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+    color: white;
+}
+.overFlow{
+    display: flex;
+    flex-direction: column;
+   
+    overflow: auto;
+}
+
+.Caption{
+    font-size: 70px;
+    
+}
+
+.ComapanyInfo{
+    background: rgba(235, 251, 255, 1);
+    padding: 100px;
+
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CompanyInfoTitle{
+width: 300px;
+margin: 10px;
+}
+
+.CompanyInfoDescription{
+    width: 800px;
+    margin: 10px;
+}
+.ChatLogo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-self: flex-end;
+ 
    
 }
-.Seemore{
-    color: rgba(37, 170, 225, 1);
-    text-decoration: underline;
-
-}
-.HorizontalTwo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    overflow: auto;
-    
-}
-h7{
-    color: rgba(37, 170, 225, 1);
-    
-
-}
-.Serives{
-    width: 350px;
-}
-.HomeThirdLayer{
-    background: rgba(37, 170, 225, 1);
-    padding: 70px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
-    overflow: auto;
-
-}
-.HomeFourthLayer{
-    padding: 70px;
-    background: rgba(235, 251, 255, 1);
-    
-    font-family: Neue Haas Grotesk Display Pro;
-    text-align: center;
-
-}
-a{
-    color:#25AAE1 ;
-    text-decoration: none;
-
-
-}
-.Achievments{
-    text-align: center;
-    font-family: Neue Haas Grotesk Display Pro;
-font-size: 28px;
-
-
-}
-.PartnersReport{
-    background: rgba(255, 255, 255, 1);
-    padding: 30px;
-
-}
-.HorizontalDirection{
-    display: flex;
-    flex-direction: row;
-}
-.ClientCompany{
-    color: rgba(120, 120, 120, 1);
-
-}
-.LastLayer{
-    background: rgba(50, 45, 45, 1);
-    padding: 70px;
-    color: white;
-
-}
-.SocialMediaLogo{
-    height: 40px;
-    margin-top: 30px;
+.Description{
+font-size: 25px;
 }
