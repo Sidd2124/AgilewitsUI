@@ -95,3 +95,15 @@ p{
 .CompanyServeices{
     border: 1px solide black;
 }
+.Achievments{
+    background: rgba(37, 170, 225, 1);
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+color: white;
+}
+
+.AchievmentsItems{
+ gap: 20px;
+ text-align: center;
+}
