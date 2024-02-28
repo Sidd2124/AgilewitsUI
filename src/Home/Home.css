@@ -4,9 +4,21 @@
     flex-direction: row;
 }
 
+.SecondLayer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.Second{
+    display: flex;
+    flex-direction: column;
+   
+}
 .Title{
     padding: 100px;
-  height: 100vh;
+
+  width: 870px;
     background: rgba(37, 170, 225, 1);
    display: flex;
    flex-direction: column;
@@ -20,15 +32,21 @@
     overflow: auto;
 }
 
+
 .Caption{
-    font-size: 70px;
+width: 750px;
+font-size: 90px;
+flex-wrap: wrap;
     
 }
-
-.ComapanyInfo{
-    background: rgba(235, 251, 255, 1);
-    padding: 100px;
-
+p{
+    font-size: 20px;
+}
+.ChatLogo{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 60px;
+    
 }
 
 .Row{
@@ -36,23 +54,4 @@
     justify-content: space-between;
 }
 
-.CompanyInfoTitle{
-width: 300px;
-margin: 10px;
-}
 
-.CompanyInfoDescription{
-    width: 800px;
-    margin: 10px;
-}
-.ChatLogo{
-    height: 50px;
-    width: 50px;
-    display: flex;
-    align-self: flex-end;
- 
-   
-}
-.Description{
-font-size: 25px;
-}
