@@ -6,3 +6,29 @@
     height: 100vh;
     overflow-y: auto;
 }
+
+.AgilewitsInfo{
+    background: #EBFBFF;
+    padding: 60px;
+padding: 40px;
+    display: flex;
+    flex-direction: row;
+  gap: 40px;
+
+    font-size: 10px;
+
+}
+
+.AgilewitsBio{
+   margin-top: 150px;
+    flex-wrap: wrap;
+   
+
+
+    padding: 20px;
+}
+
+.Headfont{
+    font-size: 19px;
+    
+}
