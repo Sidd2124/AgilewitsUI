@@ -1,5 +1,6 @@
 .AboutTopLayer{
     display: flex;
+    width: 100vw;
 }
 
 .AboutpageSecondLayer{
@@ -10,7 +11,7 @@
 .AgilewitsInfo{
     background: #EBFBFF;
     padding: 60px;
-padding: 40px;
+  
     display: flex;
     flex-direction: row;
   gap: 40px;
@@ -31,4 +32,33 @@ padding: 40px;
 .Headfont{
     font-size: 19px;
     
+}
+
+.Mission{
+    background: #25AAE1;
+    padding: 60px;
+    color: white;
+    font-size: 10px;
+
+}
+.MissionTopics{
+    border: 1px solid white;
+    padding: 6px;
+    margin: 6px;
+    width: 200px;
+
+}
+
+.MissionTopicsWraper{
+    display: flex;
+    width: 650px;
+    flex-wrap: wrap;
+}
+
+.MissionDescription{
+    font-size: 14px;
+}
+.MissiileLogo{
+width: 330px;
+
 }
