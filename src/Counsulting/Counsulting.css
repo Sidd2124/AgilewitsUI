@@ -1,0 +1,51 @@
+.CounsultingTopLayer{
+    display: flex;
+    height: 100vh;
+}
+
+.CounsultingSecondLayer{
+    height: 100vh;
+    overflow-y: auto;
+}
+.CounsultingTopics{
+    background: #EBFBFF;
+    padding: 50px;
+    
+
+}
+
+.TopicItems{
+    background: #25AAE1;
+     padding: 10px;
+     display: flex;
+     color:  #92D5F0;
+     ;
+
+
+}
+.Bi{
+    display: flex;
+    flex-direction: column;
+
+}
+.BiLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.IbmBlue{
+    color: #25AAE1;
+    
+}
+/* Counsulting.css */
+
+/* Add styling for the unordered list */
+
+li {
+    list-style-type: disc; /* Set bullet style */
+    margin-left: 20px;
+    font-family: Sans-serif;
+
+    
+}

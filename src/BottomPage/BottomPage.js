@@ -38,7 +38,9 @@ return(
    </div>
    <div className="ServicesBottomContainer">
     <h3>SERVICES</h3>
+    <Link to="/Counsulting" className="LinkRemove">
     <p>Counsulting</p>
+    </Link>
     <Link className="LinkRemove" to="/AppDevelopment">
     <p>App Developement</p>
     </Link>

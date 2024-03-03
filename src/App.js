@@ -15,6 +15,8 @@ import AppDevelopment from './AppDevelopement/AppDevelopment'
 
 import Concen from './Concen/concen'
 
+import Counsulting from './Counsulting/Counsulting'
+
 
 
 
@@ -44,6 +46,7 @@ UpdateDropDownStatus=()=>{
     <Route exact path="/About" component={AboutUs}/>
     <Route exact path="/Contact" component={Contact}/>
     <Route exact path="/AppDevelopment" component={AppDevelopment}/>
+    <Route exact path="/Counsulting" component={Counsulting}/>
     <Route exact path="/Concen" component={Concen}/>
     <Route exact path="/NothingFound" component={()=><div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}><h1>Nothing Found</h1><Link to="/"><button>Home</button></Link></div>}/>
     <Redirect to="/NothingFound"/>
