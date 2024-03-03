@@ -44,8 +44,9 @@ return(
     <Link className="LinkRemove" to="/AppDevelopment">
     <p>App Developement</p>
     </Link>
-   
-    <p>Trainig</p>
+    <Link to="/Training" className="LinkRemove">
+                <p>Training</p>
+                </Link>
 
    </div>
    <div className="ServicesBottomContainer">

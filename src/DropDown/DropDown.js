@@ -40,8 +40,10 @@ const DropDown=()=>{
                 <Link className="LinkRemove" to="/AppDevelopment">
                 <p>APP DEVELOPEMENT</p>
     </Link>
-                
+                <Link to="/Training" className="LinkRemove">
                 <p>TAINING</p>
+                </Link>
+               
             </div>
             <div>
             <Link to="/Concen" className="LinkRemove">

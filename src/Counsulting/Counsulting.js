@@ -145,6 +145,17 @@ These courses help you reach the next level in your career as you learn to use b
         )
     }
 
+    const DataScience=()=>{
+        return(
+            <div className='Bi'>
+                <h1>DATA SCIENCE</h1>
+                <p>Agilewit Solutions Inc provides an Information Technology contract Consultants specializing in Applications development, Infrastructure support, Enterprise Resource Planning (ERP), Data Warehousing, and Database. Our client-base is broad, ranging from small businesses to Fortune 500 companies and stretching across numerous verticals. Among these markets are Communications, Construction, Financial/Banking, Information Technology, Manufacturing, Oil & Gas, Transportation, Biotechnology, Government, Healthcare/Medical Institutions, Education, Insurance, Legal, Marketing/Media, Pharmaceutical, Retail, Technology and Utilities.</p>
+                <h2 className='IbmBlue'>Data Science</h2>
+                <p>Our success is simply the result of hard work in Data science models. Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from data in various forms, both structured and unstructured, similar to data mining.</p>
+            </div>
+        )
+    }
+
     const CounsultingDescription = () => {
         switch (CounsultingStatus) {
             case "BussinessIntelligence":
@@ -154,7 +165,9 @@ These courses help you reach the next level in your career as you learn to use b
                     case "OracleBusinessIntelligence":
                         return <Oracle/>;
                         case "Big Data Analytics":
-                            return <BigDateAnalytics/>
+                            return <BigDateAnalytics/>;
+                            case "DATA SCIENCE":
+                                return <DataScience/>;
             default:
                 return null;
         }

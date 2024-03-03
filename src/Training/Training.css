@@ -1,0 +1,17 @@
+.TrainingTopLayer{
+    display: flex;
+    height: 100vh;
+}
+.TrainingSecondLayer{
+    height: 100vh;
+    overflow-y: auto;
+}
+.TrainindDesription{
+    background: #EBFBFF;
+padding: 40px;
+text-align: center;
+   
+}
+.TrainigLogo{
+    height: 200px;
+}

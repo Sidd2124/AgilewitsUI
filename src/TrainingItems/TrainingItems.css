@@ -1,0 +1,75 @@
+.vertical-text h1 {
+    writing-mode: vertical-rl; /* Sets vertical text orientation */
+    text-orientation: sideways-right; /* Ensures text orientation from bottom to top, leaning to the left */
+}
+.TrainingItemTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Mainicon{
+    border:  2px solid #25AAE1;
+    height: 700px;
+    
+}
+
+.Mainicon {
+    border: 2px solid #25AAE1;
+    height: 700px;
+    position: relative; /* Ensure absolute positioning of child elements */
+}
+
+.Childlogo{
+    background-color: #EBFBFF;
+    height: 50px;
+    width: 50px;
+}
+.MailLogoBorder {
+    border-right: 2px solid #25AAE1;
+    border-top: 2px solid #25AAE1;
+    border-bottom: 2px solid #25AAE1;
+    border-radius: 50%;
+    padding: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative; /* Ensure absolute positioning of child elements */
+}
+
+.MailLogoBorder img {
+    position: absolute; /* Position child elements relative to parent */
+}
+
+.MailLogoBorder img:nth-child(2) {
+    top:-22px;
+    right: 140px; /* Adjust the value as needed to position the element */
+}
+
+.MailLogoBorder img:nth-child(3) {
+    bottom: -16px;
+    right: 145px; /* Adjust the value as needed to position the element */
+    transform: rotate(90deg); /* Rotate the element for right positioning */
+}
+
+.MailLogoBorder img:nth-child(4) {
+    top: 50%;
+    right: -24px;
+    transform: translateY(-50%); /* Adjust vertical positioning */
+}
+
+
+
+
+.TrainingDesccription{
+    border-left:1px solid #25AAE1 ;
+    border-top:1px solid #25AAE1 ;
+    border-bottom:1px solid #25AAE1 ;
+    padding: 20px;
+  
+}
+.ItemDesription{
+    font-size: 15px;
+}
