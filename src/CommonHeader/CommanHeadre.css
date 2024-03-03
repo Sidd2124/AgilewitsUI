@@ -9,6 +9,11 @@
    
 
 }
+.HeaderTop{
+    background: rgb(85, 191, 237);
+    display: flex;
+    flex-direction: column;
+}
 
 .PrimeIcone{
 height: 300px;

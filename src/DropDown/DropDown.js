@@ -3,6 +3,8 @@ import "./DropDown.css"
 
 import Context from '../Context/Context'
 
+import {Link} from 'react-router-dom'
+
 import CloseIcon from './CloseIcon.png'
 import { useContext } from 'react'
 const DropDown=()=>{
@@ -26,16 +28,23 @@ const DropDown=()=>{
         <div className="DropDownSecondLayer">
             <div>
 
-                <p>ABOUTEUS</p>
+            <Link className="LinkRemove" to="/About">
+                <p>ABOUR US</p>
+    </Link>
                 <p>CAREER OPENINGS</p>  
             </div>
             <div>
                 <p>COUNSULTING</p>
+                <Link className="LinkRemove" to="/AppDevelopment">
                 <p>APP DEVELOPEMENT</p>
+    </Link>
+                
                 <p>TAINING</p>
             </div>
             <div>
-                <p>CONCEN</p>
+            <Link to="/Concen" className="LinkRemove">
+    <p>CONSEN</p>
+    </Link>
             </div>
        
         </div>

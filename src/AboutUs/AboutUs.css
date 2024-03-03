@@ -51,12 +51,12 @@
 
 .MissionTopicsWraper{
     display: flex;
-    width: 650px;
+    width: 600px;
     flex-wrap: wrap;
 }
 
 .MissionDescription{
-    font-size: 14px;
+    font-size: 16px;
 }
 .MissiileLogo{
 width: 330px;

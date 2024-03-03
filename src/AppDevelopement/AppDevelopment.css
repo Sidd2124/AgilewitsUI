@@ -1,0 +1,49 @@
+.TopAppDevelopment{
+    display: flex;
+    height: 100vh;
+}
+.DevelopFeatures{
+    background: #25AAE1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.Gifbg{
+    background-color: white;
+    border-radius: 8px;
+    
+    padding: 70px;
+    display: flex;
+    gap: 40px;
+}
+.GifLogo{
+    height: 250px;
+}
+.Customie{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+ margin-left: 10px;
+    border-radius: 8px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AppGallery{
+    background: #EBFBFF;
+    padding: 60px;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

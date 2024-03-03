@@ -1,0 +1,39 @@
+.ConcenTopLayer{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.ConceSecondLayer{
+    height: 100vh;
+    overflow-y: auto;
+}
+.ConcenInfo{
+    background: #25AAE1;
+    padding: 20px;
+    color: white;
+
+}
+
+.bullet-list {
+    list-style-type: disc; 
+    
+  }
+  .LoginInfor{
+    margin-left: 30px;
+    margin-right: 30px;
+   margin-top: 60px;
+    font-size: 20px;
+    
+  }
+
+  .ConceLogin{
+    display: flex;
+    gap: 60px;
+    width: 1000px;
+    
+  }
+  .GifLogin{
+    width: 500px;
+    height: 700px;
+  }

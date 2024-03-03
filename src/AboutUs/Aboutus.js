@@ -12,15 +12,23 @@ import PicAboutUs from './AboutImage.png'
 
 import Missile from './Missile.png'
 
+
+
 const AboutUs=()=>{
+
+   
 return(
     <div className='AboutTopLayer'>
         <AgilewitsIntro/>
-       <div className='AboutpageSecondLayer'>
+      
+     
+
+         <div className="AboutpageSecondLayer">
+   
         <CommanHeadre PageName="About Us"/>
         <div className='AgilewitsInfo'>
 
-<img src={PicAboutUs} alt="AboutImage"/>
+<img src={PicAboutUs} alt="AboutImage" />
 
 <div className="AgilewitsBio" >
     <h1 className='Headfont'>Welcome to 
@@ -57,8 +65,11 @@ Agilewit Solutions Inc</h1>
         </div>
         <PartneresOpinion/>
         <BotttomPage/>
+      
         </div>
-    </div>
+       
+        </div>
+   
 )
 }
 

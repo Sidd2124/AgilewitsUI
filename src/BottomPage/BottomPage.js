@@ -10,10 +10,12 @@ import Twitter from '../AgilewitsIntro/Twitter.png'
 
 import Linkdin from '../AgilewitsIntro/Linkedin.png'
 
+import Chat from '../Home/chat.png'
+
 const BotttomPage=()=>{
 return(
     <div className="TopLayerBottomPage">
-       
+           <img className="ChatLogo" src={Chat} alt="ChatLogo"/>
    <div className="Rows">
    <img src={Logo} alt="lOGO" className="BottomPageLogo"/>
 
@@ -37,18 +39,25 @@ return(
    <div className="ServicesBottomContainer">
     <h3>SERVICES</h3>
     <p>Counsulting</p>
+    <Link className="LinkRemove" to="/AppDevelopment">
     <p>App Developement</p>
+    </Link>
+   
     <p>Trainig</p>
 
    </div>
    <div className="ServicesBottomContainer">
     <h3>PRODUT</h3>
+    <Link to="/Concen" className="LinkRemove">
     <p>CONSEN</p>
+    </Link>
     
 
    </div>
    <div className="ServicesBottomContainer">
+   <Link className="LinkRemove" to="/Contact">
     <h3>CONTACT</h3>
+    </Link>
     <p>AGILEWIT SOLUTIONS INC
 405 State Hwy 121 Bypass Suite A250,
 Lewisville TX 75067

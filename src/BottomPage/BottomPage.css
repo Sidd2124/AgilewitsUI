@@ -2,6 +2,8 @@
     background: rgba(50, 45, 45, 1);
     padding: 50px;
     color: white;
+    display: flex;
+    flex-direction: column;
    
     position: relative;
     width: 973px;

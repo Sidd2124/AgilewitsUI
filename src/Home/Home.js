@@ -83,6 +83,7 @@ solutions for clients worldwide</p>
 <img src={ThirdClient} alt="ClientCompanyLogo"/>
 <img src={FourthClient} alt="ClientCompanyLogo"/>
 </div>
+{IsActive&&<DropDown/>}
 
 <h1 className="ClientServiceTag">See what  we can do for you</h1>
 <div className="Row">
