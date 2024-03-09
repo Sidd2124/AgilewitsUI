@@ -42,6 +42,13 @@
 
 /* Add styling for the unordered list */
 
+ul {
+    list-style-type: disc; /* Set bullet style */
+    margin-left: 20px;
+    font-family: Sans-serif;
+
+    
+}
 li {
     list-style-type: disc; /* Set bullet style */
     margin-left: 20px;
@@ -49,3 +56,4 @@ li {
 
     
 }
+

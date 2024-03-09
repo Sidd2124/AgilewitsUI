@@ -12,7 +12,10 @@ import Linkdin from '../AgilewitsIntro/Linkedin.png'
 
 import Chat from '../Home/chat.png'
 
+
 const BotttomPage=()=>{
+ 
+    
 return(
     <div className="TopLayerBottomPage">
            <img className="ChatLogo" src={Chat} alt="ChatLogo"/>
@@ -29,8 +32,8 @@ return(
   <div className="BottomPageSecondLayer">
   <div className="ServicesBottomContainer">
     <h3>EXPLORE</h3>
-    <Link className="LinkRemove" to="/About">
-    <p>About Us</p>
+    <Link className="LinkRemove" to="/About"  >
+    <p >About Us</p>
     </Link>
     <p>Careers</p>
     <p>Current Openings</p>

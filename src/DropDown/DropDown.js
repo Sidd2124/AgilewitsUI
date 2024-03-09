@@ -28,25 +28,25 @@ const DropDown=()=>{
         <div className="DropDownSecondLayer">
             <div>
 
-            <Link className="LinkRemove" to="/About">
-                <p>ABOUR US</p>
+            <Link className="LinkRemove" to="/About" onClick={SetDropDownHide}>
+                <p>ABOUT US</p>
     </Link>
                 <p>CAREER OPENINGS</p>  
             </div>
             <div>
-            <Link to="/Counsulting" className="LinkRemove">
+            <Link to="/Counsulting" className="LinkRemove" onClick={SetDropDownHide}>
     <p>COUNSULTING</p>
     </Link>
-                <Link className="LinkRemove" to="/AppDevelopment">
+                <Link className="LinkRemove" to="/AppDevelopment" onClick={SetDropDownHide}>
                 <p>APP DEVELOPEMENT</p>
     </Link>
-                <Link to="/Training" className="LinkRemove">
+                <Link to="/Training" className="LinkRemove" onClick={SetDropDownHide}>
                 <p>TAINING</p>
                 </Link>
                
             </div>
             <div>
-            <Link to="/Concen" className="LinkRemove">
+            <Link to="/Concen" className="LinkRemove" onClick={SetDropDownHide}>
     <p>CONSEN</p>
     </Link>
             </div>

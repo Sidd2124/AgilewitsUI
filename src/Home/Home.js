@@ -31,6 +31,8 @@ import  Training from './Trainig.png'
 
 import PartneresOpinion from "../PartenrsOpinion/PartnersOpinion"
 
+import Jobs from '../Jobs/Jobs'
+
 let ServiceInformation=[{
     ServiceName:"Counsulting",
     ServiceDesription:"Our consulting services involve a wide range of services like Business Intelligence, IBM DataStage, Oracle BI, Big Data Analytics, Data Science",
@@ -64,6 +66,7 @@ const Home=()=>{
          <div className="SecondLayer">
          <div className="Title">
          <p>W E A R E A G I L E W I T</p>
+       
 <h1 className="Caption">Innovate With Our Tech Experts</h1>
 <p> Elevate Your Business with Our Technology Consulting and Software Development Expertise</p>
 <p>LETS WORK TOGETHER +</p>
