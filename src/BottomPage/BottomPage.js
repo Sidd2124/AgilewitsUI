@@ -18,9 +18,15 @@ const BotttomPage=()=>{
     
 return(
     <div className="TopLayerBottomPage">
-           <img className="ChatLogo" src={Chat} alt="ChatLogo"/>
+        <Link className="ChatLogo"  to="/Contact">
+           <img  src={Chat} alt="ChatLogo"/>
+           </Link>
    <div className="Rows">
+    <Link to="/">
+     
    <img src={Logo} alt="lOGO" className="BottomPageLogo"/>
+
+   </Link>
 
 <div className="BottomPageSocialMediaIcons">
 <img src={Facebook} alt="Facebook" className="BottomPageSocialMediaLogo"/>
@@ -64,11 +70,11 @@ return(
    <Link className="LinkRemove" to="/Contact">
     <h3>CONTACT</h3>
     </Link>
-    <p>AGILEWIT SOLUTIONS INC
-405 State Hwy 121 Bypass Suite A250,
+    <p className="CompanyAdress">AGILEWIT SOLUTIONS INC    
+   State Hwy 121 Bypass Suite A250,
 Lewisville TX 75067
 Phone Number: (516) 888-0089</p>
-    <p>AGILEWIT SOLUTIONS PVT LTDH NO.3-1-101/6,Navodaya Colony,
+    <p className="CompanyAdress">AGILEWIT SOLUTIONS PVT LTDH NO.3-1-101/6,Navodaya Colony,
 Road No 2,Sbh Venture-I, LB NagarHyderabad,Telangana,India,50074
 Phone Number: 040-48547228</p>
     <p className="email">info@agilewits.com</p>

@@ -6,7 +6,7 @@
     flex-direction: column;
    
     position: relative;
-    width: 980px;
+    width: 973px;
 
 }
 .LinkRemove{
@@ -14,19 +14,6 @@
     color: white;
 }
 
-p:hover{
-   
- 
-   text-decoration: underline;
-   text-decoration-color:rgba(37, 170, 225, 1) ;
-}
-
-h3:hover{
-   
- 
-    text-decoration: underline;
-    text-decoration-color:rgba(37, 170, 225, 1) ;
- }
 
 .BottomPageLogo{
     height: 100px;
@@ -68,4 +55,8 @@ h3:hover{
 .email{
     color: rgba(37, 170, 225, 1);
 
+}
+.CompanyAdress{
+    width: 250px;
+    font-size: 18px;
 }

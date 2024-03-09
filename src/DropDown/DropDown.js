@@ -52,7 +52,9 @@ const DropDown=()=>{
             </div>
        
         </div>
-        <p className="LetWorktogether">LETS WORK TOGETHER +</p>
+      <Link to="/Contact">
+        <p className="LetWorktogether"   onClick={SetDropDownHide}>LETS WORK TOGETHER +</p>
+        </Link>
     </div>
 
         </div>
