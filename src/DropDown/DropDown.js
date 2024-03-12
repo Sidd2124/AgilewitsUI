@@ -31,7 +31,10 @@ const DropDown=()=>{
             <Link className="LinkRemove" to="/About" onClick={SetDropDownHide}>
                 <p>ABOUT US</p>
     </Link>
-                <p>CAREER OPENINGS</p>  
+                
+                <Link to="/Jobs" className="LinkRemove" onClick={SetDropDownHide}>
+                <p>CAREER OPENINGS</p> 
+                </Link> 
             </div>
             <div>
             <Link to="/Counsulting" className="LinkRemove" onClick={SetDropDownHide}>
@@ -52,9 +55,11 @@ const DropDown=()=>{
             </div>
        
         </div>
+        <div className="LetsWorkTogether">
       <Link to="/Contact">
         <p className="LetWorktogether"   onClick={SetDropDownHide}>LETS WORK TOGETHER +</p>
         </Link>
+        </div>
     </div>
 
         </div>

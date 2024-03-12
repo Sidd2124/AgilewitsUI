@@ -41,7 +41,9 @@ return(
     <Link className="LinkRemove" to="/About"  >
     <p >About Us</p>
     </Link>
+    <Link to="/Jobs" className="LinkRemove">
     <p>Careers</p>
+    </Link>
     <p>Current Openings</p>
 
    </div>
@@ -74,9 +76,7 @@ return(
    State Hwy 121 Bypass Suite A250,
 Lewisville TX 75067
 Phone Number: (516) 888-0089</p>
-    <p className="CompanyAdress">AGILEWIT SOLUTIONS PVT LTDH NO.3-1-101/6,Navodaya Colony,
-Road No 2,Sbh Venture-I, LB NagarHyderabad,Telangana,India,50074
-Phone Number: 040-48547228</p>
+    <p className="CompanyAdress">AGILEWIT SOLUTIONS PVT LTD H.No.1-90/7/53/P, Second Floor, Blossom Heights, Plot No. 53, Patrika Nagar, Madhapur, Hyderabad Telangana</p>
     <p className="email">info@agilewits.com</p>
 
    </div>

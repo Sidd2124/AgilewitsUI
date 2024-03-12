@@ -19,6 +19,8 @@ import Counsulting from './Counsulting/Counsulting'
 
 import Training from './Training/Training'
 
+import Jobs from './Jobs/Jobs'
+
 
 
 
@@ -51,6 +53,8 @@ UpdateDropDownStatus=()=>{
     <Route exact path="/Counsulting" component={Counsulting}/>
     <Route exact path="/Concen" component={Concen}/>
     <Route exact path="/Training" component={Training}/>
+    <Route exact path="/Jobs" component={Jobs}/>
+    
     <Route exact path="/NothingFound" component={()=><div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}><h1>Nothing Found</h1><Link to="/"><button>Home</button></Link></div>}/>
     <Redirect to="/NothingFound"/>
 

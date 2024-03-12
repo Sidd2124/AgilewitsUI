@@ -1,0 +1,85 @@
+.JobsTop{
+    
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.JobsFirstLayer{
+    display: flex;
+}
+.JobsSecondLayer{
+    height: 100vh;
+    overflow-y: auto;
+}
+.OpeningsHeading{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.City{
+    display: none;
+}
+
+/* Style the section */
+section {
+    margin: 20px 0;
+}
+
+/* Style the select dropdown */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+/* Style the select dropdown when hovered */
+select:hover {
+    border-color: #999;
+}
+
+/* Style the select dropdown arrow */
+select::-ms-expand {
+    display: none;
+}
+
+select option {
+    background-color: #fff;
+    color: #333;
+}
+.CurreniOpenings {
+    font-family: Italic;
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: typing 4s steps(20, end), blink-animation 2s infinite; /* Typing and blinking animations */
+}
+
+@keyframes typing {
+    0% {
+        width: 0; /* Start with zero width */
+    }
+    50% {
+        width: 300px; /* Increase width to halfway to show half the text */
+    }
+    100% {
+        width: 300px; /* Remain at full width to show the full text */
+    }
+}
+
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1; /* Start and end with opacity 1 */
+    }
+    50% {
+        opacity: 0; /* Midway, opacity is 0 (text is invisible) */
+    }
+}
+
+

@@ -1,0 +1,22 @@
+.Jobitem{
+    border: 1px solid black;
+    padding: 20px;
+    width: 270px;
+    margin: 10px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EBFBFF;
+
+}
+.indianLogo{
+    height: 30px;
+    margin-top: 20px;
+}
+.CountryLogo{
+    display: flex;
+    gap: 10px;
+}
