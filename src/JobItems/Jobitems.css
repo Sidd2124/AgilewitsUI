@@ -1,7 +1,8 @@
 .Jobitem{
     border: 1px solid black;
-    padding: 20px;
-    width: 270px;
+    padding: 10px;
+    width: 290px;
+    
     margin: 10px;
     border-radius: 6px;
     text-align: center;
@@ -9,14 +10,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #EBFBFF;
+    background: rgba(128, 128, 128, 0.068);
 
 }
 .indianLogo{
     height: 30px;
     margin-top: 20px;
+    margin-right: 10px;
 }
 .CountryLogo{
     display: flex;
     gap: 10px;
+}
+.InfoLogo{
+    margin-top: 20px; 
+    margin-left: 40px; 
+}
+.DesriptionInfo{
+    position: absolute    ;
+    top: 23.5rem;
+    left: 35rem;
+    width: 560px;
+    height: 100px;
+    padding: 20px;
+    text-decoration: none;
+    background: rgb(57, 55, 55);
+    display: flex;
+   border-radius: 6px;
+    color: white;
+    animation: fadeInDown 0.5s ease forwards;
+}
+.svgLogo{
+    color: white;
 }

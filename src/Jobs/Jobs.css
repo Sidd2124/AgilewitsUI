@@ -4,6 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
+  
+    background: #EBFBFF;
+
 }
 
 .JobsFirstLayer{
@@ -80,6 +83,18 @@ select option {
     50% {
         opacity: 0; /* Midway, opacity is 0 (text is invisible) */
     }
+}
+
+.SerachIcon{
+    margin-top: 0px;
+}
+
+.NOJobs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 
