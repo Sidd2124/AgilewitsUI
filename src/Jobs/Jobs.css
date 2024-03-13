@@ -64,17 +64,17 @@ select option {
     animation: typing 4s steps(20, end), blink-animation 2s infinite; /* Typing and blinking animations */
 }
 
-@keyframes typing {
-    0% {
-        width: 0; /* Start with zero width */
+    @keyframes typing {
+        0% {
+            width: 0; /* Start with zero width */
+        }
+        50% {
+            width: 300px; /* Increase width to halfway to show half the text */
+        }
+        100% {
+            width: 300px; /* Remain at full width to show the full text */
+        }
     }
-    50% {
-        width: 300px; /* Increase width to halfway to show half the text */
-    }
-    100% {
-        width: 300px; /* Remain at full width to show the full text */
-    }
-}
 
 @keyframes blink-animation {
     0%, 100% {
@@ -98,3 +98,17 @@ select option {
 }
 
 
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.search-icon {
+    width: 14px; /* Set the desired width */
+    height: 14px; /* Set the desired height */
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+}
