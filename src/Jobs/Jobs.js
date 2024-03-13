@@ -5,7 +5,7 @@ import AgilewitsIntro from '../AgilewitsIntro/AgilewitsIntro'
 import CommanHeadre from '../CommonHeader/CommonHeadre'
 
 import BotttomPage from '../BottomPage/BottomPage'
-import {Link} from 'react-router-dom'
+
 import "./Jobs.css"
 
 import { useState } from 'react'
