@@ -14,7 +14,36 @@ import NoJobs from './No-Jobs.png'
 
 const JobInfo=[
  
-    {CompanyLogo: 'https://assets.ccbp.in/frontend/react-js/jobby-app/netflix-img.png', Type: 'Internship', id: 'bb95e51b-b1b2-4d97-bee4-1d5ec2b96751', Description: 'We are looking for a DevOps Engineer with a minimu…tages. The role will focus on production support.', Location: 'Delhi',Country: 'India',Package: "10 LPA",Rating: 4,Title: "Devops Engineer"},
+    {CompanyLogo: 'https://assets.ccbp.in/frontend/react-js/jobby-app/netflix-img.png', Type: 'Internship', id: 'bb95e51b-b1b2-4d97-bee4-1d5ec2b96751', Description: `• Serve as primary System Administrator for the Salesforce environments
+    • Handle all administrative functions including user account maintenance, reports and dashboards, workflows, and other routine tasks.
+    • Respond to end user issues, enhancement requests and other administrative needs.
+    • Coordinate the evaluation, scope, and completion of new development requests.
+    • Manage the integration of applications connected to Salesforce.
+    • Work independently with members of the user community to define and document development requirements. Facilitate backlog grooming session.
+    • Effectively act as the liaison between our users and application development team
+    • Complete regular internal system audits and prepare for upgrades.
+    • Work with line of business partners to establish suitable processes to support development and change management activities.
+    • Assist in training of new users and grow the Salesforce skill set and adoption across the organization.
+    • Perform testing of features/functions as required.
+    • Integrate Salesforce with applications such as Active Directory, in house and Third-party applications.
+    • Ensure configuration consistency across development, test, and production environments.
+    • Create external objects and integrated with Oracle database using lightning connect and O-Data protocol.
+    • Develop Apex triggers, apex classes, batch apex and schedule apex to automate the business processes.
+    • Develop Visualforce pages from scratch to customize the user interface using various controllers.
+    • Use JavaScript/J-query to perform client-side validations on Visualforce pages and to improve the performance of the User interface.
+    • Implemented and maintained Salesforce Service Cloud and Sales Cloud. Built custom solutions with Apex and Visualforce, which support most critical processes and workflows.
+    • Experience with Sales Cloud, Service Cloud and Marketing Cloud.
+    • Experience in working and configuring Apttus Intelligent Workflow Approvals.
+    • Hands on experience in building custom lightning components and lightning applications.
+    Required Qualifications:
+    • Salesforce certification is preferred
+    • Degree in Computer Science or a related technical field involving coding (e.g. physics or mathematics), or
+    equivalent practical experience
+    
+    CONTACT
+    Mail application with resume ref job code# aws01 to hr@agilewits.com, Agilewit Solutions Inc 405 State Highway 121 Bypass Lewisville TX 75067
+    
+    Note: This position is eligible for company's employee referral award program. Please refer to the posted policy for details.`, Location: 'Delhi',Country: 'India',Package: "10 LPA",Rating: 4,Title: "Devops Engineer"},
     
     {CompanyLogo: 'https://assets.ccbp.in/frontend/react-js/jobby-app/facebook-img.png', Type: 'Full Time', id: 'd6019453-f864-4a2f-8230-6a9642a59466', Description: 'We’re in search of a Back-End Software Engineer th…t be architecting new features for our customers.', Location: 'Bangalore',Country: 'India' ,Package: "11 LPA",Rating: 4,Title: "Backend Engineer"},
      
@@ -140,17 +169,13 @@ const JobInfo=[
 
 const Jobs =()=>{
     const[JObCountry,SetJobCountry]=useState("India")
-    const[JObCity,SetCity]=useState("Boston, Massachusetts")
     const[SeachInputValue,SetSeachInputValue]=useState("")
     const [ButtonSearch,SetButtonSearch]=useState("")
 
     const UpdateCountry=(e)=>{
         SetJobCountry(e.target.value)
     }
-    const UpdateCity=(e)=>{
-        SetCity(e.target.value)
-    }
-
+   
     const UpdateSearchResult=()=>{
         SetButtonSearch(SeachInputValue)
         SetSeachInputValue("")
@@ -177,14 +202,7 @@ const Jobs =()=>{
                 <option value="USA">USA</option>
                 </select>
              </section>
-             <section className='City'>
-                <select onChange={UpdateCity}>
-                <option value="San Francisco, California">San Francisco, California</option>
-                <option value="Seattle, Washington">Seattle, Washington</option>
-                <option value="Austin, Texas">Austin, Texas</option>
-                <option value="Boston, Massachusetts">Boston, Massachusetts</option>
-                </select>
-             </section>
+          
              </div>
              
              </div>

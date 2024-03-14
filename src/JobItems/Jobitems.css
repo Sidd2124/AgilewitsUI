@@ -28,10 +28,10 @@
 }
 .DesriptionInfo{
     position: absolute    ;
-    top: 23.5rem;
-    left: 35rem;
-    width: 560px;
-    height: 100px;
+    top: 0rem;
+    left: 19rem;
+    width: 90%;
+    height: 100%;
     padding: 20px;
     text-decoration: none;
     background: rgb(57, 55, 55);

@@ -92,7 +92,7 @@ const Sent = async (e) => {
     <input type="text" value={FirstName} placeholder="First Name" pattern="[A-Za-z]+" name="name"  className="FirstName" onChange={UpdateFirstName}/>
     
     
-    <input type="text" value={LastName} placeholder="Ladt Name" pattern="[A-Za-z]+" name="name" className="FirstName" onChange={UpdateLastName}/>
+    <input type="text" value={LastName} placeholder="Last Name" pattern="[A-Za-z]+" name="name" className="FirstName" onChange={UpdateLastName}/>
     </div>
     
     <input type="text" value={Contact} placeholder="Contact Details" className="Email" name="number" onChange={UpdateContact} pattern="[0-9]*" />

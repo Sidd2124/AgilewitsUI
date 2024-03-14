@@ -1,4 +1,5 @@
 import './CompanyService.css'
+import {Link} from 'react-router-dom'
 
 const Service=(props)=>{
 
@@ -17,7 +18,9 @@ const Service=(props)=>{
 
     </div>
     <div class="SeeMore">
+        <Link to={`/${ServiceName}`}>
         <h1>See More</h1>
+        </Link>
     </div>
 </div>
 
