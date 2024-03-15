@@ -2,6 +2,8 @@ import "./AppDevelopment.css"
 
 import AgilewitsIntro from '../AgilewitsIntro/AgilewitsIntro'
 
+import {Link} from 'react-router-dom'
+
 import PicAboutUs from '../AboutUs/AboutImage.png'
 
 import CommanHeadre from '../CommonHeader/CommonHeadre'
@@ -53,7 +55,10 @@ Agilewit Solutions Inc</h1>
             </div>
         </div>
         <div className="Customie">
-<h2>LET'WORK TOGETHER +</h2>
+        <Link className="LinkRemove" to="/Contact">
+        <h2 className="Lets">LET'WORK TOGETHER +</h2>
+    </Link>
+
         </div>
         </div>
       <div className="AppGallery">

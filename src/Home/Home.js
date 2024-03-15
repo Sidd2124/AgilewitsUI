@@ -115,7 +115,7 @@ const Home = () => {
                         <div className="Row">
                             <img className="BigLogo" src={BigIcone} alt="Logo" />
                             <div className="ServiceDetails">
-                                {ServiceInformation.map((each) => <Service Details={each} />)}
+                                {ServiceInformation.map((each,index) => <Service Details={each} key={index} />)}
 
                             </div>
 

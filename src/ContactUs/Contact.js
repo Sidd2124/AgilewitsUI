@@ -114,7 +114,7 @@ const Sent = async (e) => {
 
 
     <input type="text" placeholder="Message" value={Message} className="Message" name="message" onChange={UpdateMessage}/>
-    <input type="file" name="resume"/>
+   
     
     <button style={{ opacity:  (FirstName === "" || LastName === "" || Contact===""|| Mail==="" || Message==="")  ? 0.2 : 1 }}  type="submit">SendRequest for Contact</button>
     <p className="SuccessMessage">{SuccessMessage}</p>

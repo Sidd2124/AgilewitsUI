@@ -3,7 +3,11 @@ import './Jobitems.css'
 import CountryLogo from './Ind.png'
 
 import USAlog from './USA.png'
-import { useState } from 'react'
+
+import Context from '../Context/Context'
+import { useState,useContext } from 'react'
+
+import {Link} from 'react-router-dom'
 
 
 
@@ -11,11 +15,17 @@ const JobItem = (props) => {
     const { JobItemsInfo } = props
     const { JobDuties, Location, Country, Title, Package,JobRequirements,Type } = JobItemsInfo
     const [Status, SetStatus] = useState(false)
+    const{UpdateOpeningName,CareerJob}=useContext(Context)
+    console.log(CareerJob)
 
     const UpdateStatus = () => {
         SetStatus(!Status)
     }
 
+
+    const UpdateJobName=()=>{
+        UpdateOpeningName(Title)
+    }
 
     const Duties = () => {
         return (
@@ -32,7 +42,8 @@ const JobItem = (props) => {
                 }
                 <p>Note: This position is eligible for company's employee referral award program. Please refer to the posted policy for details.</p>
                 <div className='ApplyNowButton'>
-                    <button>Apply</button>
+                <Link onClick={UpdateJobName} to="/Application">    <button className='JobitemButton' >ApplyNow</button>
+    </Link>
                     <p></p>
                 </div>
             </div>
@@ -61,7 +72,9 @@ const JobItem = (props) => {
                 {Country === "India" ? <img className='indianLogo' src={CountryLogo} alt='Ind' /> : <img className='indianLogo' src={USAlog} alt='Ind' />}
             </div>
 <div className='Row'>
-    <button className='JobitemButton'>ApplyNow</button>
+    <Link onClick={UpdateJobName} to="/Application">    <button className='JobitemButton' >ApplyNow</button>
+    </Link>
+
     <button className='JobitemButton' onClick={UpdateStatus} >Details</button>
 
 </div>

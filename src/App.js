@@ -34,16 +34,19 @@ import ApplicationForm from './ApplicationForm/Application'
 
 
 class App extends Component{
-state={DropDownStatus:false}
+state={DropDownStatus:false,CareerOpening:'ReactJS Developer'}
 
 UpdateDropDownStatus=()=>{
   this.setState(prevState=>({DropDownStatus:!prevState.DropDownStatus}))
 }
+UpdateJobOpeningName=(S)=>{
+this.setState({CareerOpening:S})
+}
   render(){
-    const{DropDownStatus}=this.state
+    const{DropDownStatus,CareerOpening}=this.state
     return(
 <div>
-<Context.Provider value={{IsActive:DropDownStatus,SetDropDownStatus:this.UpdateDropDownStatus}}>
+<Context.Provider value={{CareerJob:CareerOpening,IsActive:DropDownStatus,SetDropDownStatus:this.UpdateDropDownStatus,UpdateOpeningName:this.UpdateJobOpeningName}}>
        
     
    <BrowserRouter>
