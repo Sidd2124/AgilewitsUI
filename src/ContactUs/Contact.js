@@ -63,7 +63,7 @@ const Sent = async (e) => {
     e.preventDefault();
 
     try {
-      // Use async/await for better readability and error handling
+     
       const result = await emailjs.sendForm(
         'service_mjxgtom', 'template_3fhp1ha',
         form.current,
@@ -72,7 +72,7 @@ const Sent = async (e) => {
 
       console.log(result.text);
 
-      // Reset the form only after the email has been sent successfully
+      
       console.log('SUCCESS!');
       SetFirstName("");
       SetLastName("");
@@ -81,12 +81,11 @@ const Sent = async (e) => {
       SetMessage("");
       SetSuccessMessage("*Details Saved. We'll be in touch shortly");
 
-      // Alert and redirect after successful email send
+    
      
       
     } catch (error) {
       console.error(error.text);
-      // Handle the error (e.g., show an error message to the user)
     }
   };
 
