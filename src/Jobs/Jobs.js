@@ -174,7 +174,7 @@ const JobInfo=[
     "Experience in Industrial Automation"
         ],
    
-     Location: 'Hyderabad',
+     Location: 'Chicago',
      Country: 'USA',
      Package: "5 LPA",
      Rating: 4,
@@ -192,7 +192,7 @@ const JobInfo=[
     "Distributed Version Control"
         ],
    
-     Location: 'Hyderabad',
+     Location: 'New York City',
      Country: 'USA',
      Package: "8 LPA",
      Rating: 4,
@@ -229,7 +229,7 @@ const JobInfo=[
         "Salesforce certification is preferred",
         " Degree in Computer Science or a related technical field involving coding (e.g. physics or mathematics), orequivalent practical experience"
 ],
-     Location: 'Bangalore',
+     Location: 'Philadelphia',
      Country: 'USA',
      Package: "7 LPA",
      Rating: 4,
@@ -251,7 +251,7 @@ const JobInfo=[
         "including:event-source systems, CQRS, distributed systems, Azure, Service-oriented Architecture.",
         "The products you build will be heavily-leveraged by other teams within PayScale."
     ],
-     Location: 'Hyderabad',
+     Location: 'Chicago',
      Country: 'USA',
      Package: "6 LPA",
      Rating: 4,
@@ -274,7 +274,7 @@ const JobInfo=[
       "Demonstrates hands-on experience in full development life cycle of Enterprise scaled software applications utilizing object oriented analysis, design, and implementation.",
       "Demonstrates expertise in Java/J2EE, Web services, JUnit, SQL and Spring. Knowledge of Apache Kafka, Hadoop and Jasper Report is a plus. Familiarity with Agile methodologies is a plus"
     ],
-     Location: 'Hyderabad',
+     Location: 'Los Angeles',
      Country: 'USA',
      Package: "8 LPA",
      Rating: 4,
@@ -296,7 +296,7 @@ const JobInfo=[
         "Skill in delivering and understanding complex, technical oral and written instructions and communicating with individuals having various levels of technical expertise and knowledge"
     
     ],
-     Location: 'Hyderabad',
+     Location: 'New York City',
      Country: 'USA',
      Package: "9 LPA",
      Rating: 4,
