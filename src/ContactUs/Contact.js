@@ -4,15 +4,21 @@ import AgilewitsIntro from "../AgilewitsIntro/AgilewitsIntro"
 
 import CommanHeadre from '../CommonHeader/CommonHeadre'
 
+import Chat from '../Home/chat.png'
+
 import BotttomPage from '../BottomPage/BottomPage'
 
 import ContactForm from './Map.png'
 
-import { useState,useRef } from "react"
+import { useState,useRef,useContext } from "react"
 
+import Option from '../Home/Options.png'
+
+import DropDown  from "../DropDown/DropDown"
 
 import emailjs from 'emailjs-com';
 
+import Context from '../Context/Context'
 
 const Contact=()=>{
 const [FirstName,SetFirstName]=useState("")
@@ -22,6 +28,11 @@ const [Mail,SetMail]=useState("")
 const [Message,SetMessage]=useState("")
 const [SuccessMessage,SetSuccessMessage]=useState("")
 const form = useRef();
+const { IsActive, SetDropDownStatus, } = useContext(Context)
+
+const DropDownStatus = () => {
+    SetDropDownStatus()
+}
 
 const UpdateFirstName=(e)=>{
     SetFirstName(e.target.value)
@@ -83,7 +94,10 @@ const Sent = async (e) => {
     return(
         <div className="ContactTopLayer">
             <AgilewitsIntro/>
-       <div className="ContactSecondLayer">
+       <div className="Second">
+        
+       <img className="ChatLogo" src={Option} alt="ChatLogo" onClick={DropDownStatus} />
+        <div className="SecondLayer">
 <CommanHeadre PageName="ContactUs"/>
 <div className="ContactForm">
 <img src={ContactForm} alt="ContactForm" className="MapLogo"/>
@@ -91,7 +105,7 @@ const Sent = async (e) => {
     <div >
     <input type="text" value={FirstName} placeholder="First Name" pattern="[A-Za-z]+" name="name"  className="FirstName" onChange={UpdateFirstName}/>
     
-    
+    {IsActive&&<DropDown/>}
     <input type="text" value={LastName} placeholder="Last Name" pattern="[A-Za-z]+" name="name" className="FirstName" onChange={UpdateLastName}/>
     </div>
     
@@ -101,12 +115,15 @@ const Sent = async (e) => {
 
 
     <input type="text" placeholder="Message" value={Message} className="Message" name="message" onChange={UpdateMessage}/>
+    <input type="file" name="resume"/>
     
     <button style={{ opacity:  (FirstName === "" || LastName === "" || Contact===""|| Mail==="" || Message==="")  ? 0.2 : 1 }}  type="submit">SendRequest for Contact</button>
     <p className="SuccessMessage">{SuccessMessage}</p>
 </form>
 </div>
 <BotttomPage/>
+</div>
+<img className="ChatLogo" src={Chat} alt="ChatLogo" />
        </div>
         </div>
     )

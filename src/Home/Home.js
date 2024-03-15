@@ -144,7 +144,10 @@ const Home = () => {
                     <PartneresOpinion />
                     <BotttomPage />
                 </div>
-                <img className="ChatLogo" src={Chat} alt="ChatLogo" />
+                <Link to="/Contact" className="ChatLogo">                
+                <img  src={Chat} alt="ChatLogo" />
+                </Link>
+
 
 
             </div>

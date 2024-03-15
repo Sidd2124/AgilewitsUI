@@ -28,18 +28,42 @@
 }
 .DesriptionInfo{
     position: absolute    ;
+    overflow-y: auto;
     top: 0rem;
     left: 19rem;
-    width: 90%;
-    height: 100%;
-    padding: 20px;
+    width: 75%;
+    padding: 20px   ;
+    height: 100vh;
     text-decoration: none;
     background: rgb(57, 55, 55);
     display: flex;
-   border-radius: 6px;
+    flex-direction: column;
+    border-radius: 6px;
     color: white;
+   
     animation: fadeInDown 0.5s ease forwards;
 }
 .svgLogo{
     color: white;
+
+}
+.JobDutiesTitle{
+    color: skyblue;
+}
+.ApplyNowButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.JobitemButton{
+    
+    width: fit-content;
+    margin: 10px;
+    font-size: 15px;
+}
+.Dutys{
+    text-align: start;
 }

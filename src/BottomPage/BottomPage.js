@@ -10,7 +10,7 @@ import Twitter from '../AgilewitsIntro/Twitter.png'
 
 import Linkdin from '../AgilewitsIntro/Linkedin.png'
 
-import Chat from '../Home/chat.png'
+
 
 
 const BotttomPage=()=>{
@@ -19,7 +19,7 @@ const BotttomPage=()=>{
 return(
     <div className="TopLayerBottomPage">
         <Link className="ChatLogo"  to="/Contact">
-           <img  src={Chat} alt="ChatLogo"/>
+          
            </Link>
    <div className="Rows">
     <Link to="/">
