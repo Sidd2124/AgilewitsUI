@@ -122,7 +122,6 @@ const Sent = async (e) => {
 </div>
 <BotttomPage/>
 </div>
-<img className="ChatLogo" src={Chat} alt="ChatLogo" />
        </div>
         </div>
     )

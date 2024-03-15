@@ -6,11 +6,22 @@ import CommanHeadre from '../CommonHeader/CommonHeadre'
 
 import BotttomPage from '../BottomPage/BottomPage'
 
+
+import Chat from '../Home/chat.png'
+
+import Option from '../Home/Options.png'
+
 import "./Jobs.css"
 
-import { useState } from 'react'
+import {Link} from 'react-router-dom'
+
+import Context from '../Context/Context'
+
+import { useState ,useContext} from 'react'
 
 import NoJobs from './No-Jobs.png'
+
+import DropDown from '../DropDown/DropDown'
 
 const JobInfo=[
  
@@ -314,6 +325,11 @@ const Jobs =()=>{
     const[SeachInputValue,SetSeachInputValue]=useState("")
     const [ButtonSearch,SetButtonSearch]=useState("")
 
+    const { IsActive, SetDropDownStatus, } = useContext(Context)
+    const DropDownStatus = () => {
+        SetDropDownStatus()
+    }
+
     const UpdateCountry=(e)=>{
         SetJobCountry(e.target.value)
     }
@@ -329,9 +345,14 @@ const Jobs =()=>{
    
     const FilterdJobs=JobInfo.filter((each)=>each.Country.includes(JObCountry)&&each.Title.includes(ButtonSearch))
     return(
-        <div className='JobsFirstLayer'>
+        <div className="ToplAYER">
             <AgilewitsIntro/>
-             <div  className='JobsSecondLayer'>
+
+            
+            <div className="Second">
+
+            <img className="ChatLogo" src={Option} alt="ChatLogo" onClick={DropDownStatus} />
+            <div  className='JobsSecondLayer'>
                 <CommanHeadre PageName="Careers"/>
                 <div className='OpeningsHeading'>
                     <div>
@@ -370,6 +391,8 @@ const Jobs =()=>{
            
            
              </div>
+             
+             {IsActive && <DropDown />}
         <div >
             {FilterdJobs.length===0?
             <div className='NOJobs'>
@@ -386,6 +409,10 @@ const Jobs =()=>{
         </div>
         <BotttomPage/>
              </div>
+             <Link to="/Contact" className="ChatLogo">                
+                <img  src={Chat} alt="ChatLogo" />
+                </Link>
+            </div>
         </div>
     )
 }
