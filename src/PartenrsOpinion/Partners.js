@@ -9,7 +9,7 @@ const Partners=(props)=>{
          {PartnerProfilePic&& <img className='PartnersLogo' src={PartnerProfilePic}alt={PartnerName}/>}
             <div>
                 <h2>{PartnerName}</h2>
-            {PartnerCompantName&&    <p className="ClientrCompanyName">{PartnerCompantName}</p>}
+            {PartnerCompantName&& <p className="ClientrCompanyName">{PartnerCompantName}</p>}
             </div>
            </div>
            <p>{PartnerOpinion}</p>

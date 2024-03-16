@@ -2,7 +2,7 @@ const HomeConstants = {
     Caption:"Innovate With Our Tech Experts",
     IntroLineOne:"W E",
     IntroLineTwo:"A R E",
-    IntroLineThree:"A G I L E W I T S",
+    IntroLineThree:"A G I L E W I T",
     Tag:"Elevate Your Business with Our Technology Consulting and Software Development Expertise",
     Contact:"LETS WORK TOGETHER +",
     Ideas:"You Share your idea We get it done",

@@ -29,7 +29,7 @@ return(
    </Link>
 
 <div className="BottomPageSocialMediaIcons">
-<img src={Facebook} alt="Facebook" className="BottomPageSocialMediaLogo"/>
+<img src={Facebook} href="https://twitter.com/agilewitsol?t=5xTTxBPnQLuPutocsqADYw&s=08" target="_blank" alt="Facebook" className="BottomPageSocialMediaLogo"/>
 <img src={Twitter} alt="Twitter" className="BottomPageSocialMediaLogo"/>
 <img src={Linkdin} alt="Linkdin" className="BottomPageSocialMediaLogo"/>
 
