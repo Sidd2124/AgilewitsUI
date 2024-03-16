@@ -10,13 +10,37 @@ import ConceLoginPic from './ConcenLogin.png'
 
 import Gif from"./upload-documents.gif"
 
+import { useContext } from 'react'
+
+import Context from '../Context/Context'
+
+import {Link} from 'react-router-dom'
+
+
+import Option from '../Home/Options.png'
+
+
+import Chat from '../Home/chat.png'
+
 import "./Conce.css"
+
+import DropDown from '../DropDown/DropDown'
 
 const Concen=()=>{
 
+  const { IsActive, SetDropDownStatus, } = useContext(Context)
+  const DropDownStatus = () => {
+      SetDropDownStatus()
+  }
+
     return(
-        <div className="ConcenTopLayer">
+        <div className="ToplAYER">
           <AgilewitsIntro/>
+          
+          <div className="Second">
+
+          <img className="ChatLogo" src={Option} alt="ChatLogo" onClick={DropDownStatus} />
+
           <div className='ConceSecondLayer'>
 <CommanHeadre PageName="Concen"/>
 <div className='AgilewitsInfo'>
@@ -25,6 +49,8 @@ const Concen=()=>{
 
 <div className="AgilewitsBio" >
     <h1 className='Headfont'>CONSEN</h1>
+    
+    {IsActive && <DropDown />}
 <p className='Headfont'>CONSEN is one of the products of the AGILEWIT SOLUTIONS INC. This application reads the coulmn data provided in excel sheet and update the word document with the data provided in the excel sheet. Save the updated word document in the local directory. The updated Word documents are then converted into PDF. This PDF files are sent as a attachment to the email address provided in the excel sheet.</p>
 </div>
         </div>
@@ -61,6 +87,10 @@ const Concen=()=>{
 </div>
         </div>
 <BotttomPage/>
+          </div>
+          <Link to="/Contact" className="ChatLogo">                
+                <img  src={Chat} alt="ChatLogo" />
+                </Link>
           </div>
         </div>
     )

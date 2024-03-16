@@ -1,19 +1,41 @@
 import CommanHeadre from '../CommonHeader/CommonHeadre'
 
 import AgilewitsIntro from '../AgilewitsIntro/AgilewitsIntro'
+
 import BotttomPage from "../BottomPage/BottomPage"
+
 import "./Training.css"
 
 import React from './React.png'
+
 import TrainingItems from '../TrainingItems/TrainingItems'
+
 import JavaLogo from './Java.png'
+
 import Machine from './Machine.png'
+
 import html from "./HTML.png"
+
 import Pythone from './Pythone.png'
+
 import Robot from './Robot.png'
+
 import Asp from './Asp.png'
+
 import UI from './UI.png'
-import { useEffect,useState } from 'react'
+
+import Chat from '../Home/chat.png'
+
+import Option from '../Home/Options.png'
+
+import {Link} from 'react-router-dom'
+
+import { useEffect,useState,useContext } from 'react'
+
+import Context from '../Context/Context'
+
+import DropDown from '../DropDown/DropDown'
+
 const TrainingInfor=[
     {
         DomainName:"DatScience",
@@ -60,6 +82,11 @@ const TrainingInfor=[
 const Training=()=>{
     const [Timer,SetTimer]=useState(0)
 
+    const { IsActive, SetDropDownStatus, } = useContext(Context)
+    const DropDownStatus = () => {
+        SetDropDownStatus()
+    }
+
     const Random=Math.ceil(Math.random()*3)
     useEffect(() => {
         const interval = setInterval(() => {
@@ -73,18 +100,29 @@ const Training=()=>{
     }, [Random]); // Include Random in the dependency array
     
     return(
-        <div className='TrainingTopLayer'>
+        <div className="ToplAYER">
             <AgilewitsIntro/>
-        
+            <div className="Second">
+
+                
+            <img className="ChatLogo" src={Option} alt="ChatLogo" onClick={DropDownStatus} />
+
             <div className='TrainingSecondLayer'>
             <CommanHeadre PageName="Training"/>
             <div className='TrainindDesription'>
+            {IsActive && <DropDown />}
 <h1>Our Trainings</h1>
 <p>With a motive to provide an opportunity to the IT aspirants,to learn the software technologies and tools from the experienced and expert group of software professionals, Agilewit initiate to provide software training to the IT aspirants. the trainees get real industry exposure, which will help the trainees not only to learn the technologies but also become the experts of the technologies & tools.</p>
             <TrainingItems TringItemsInfo={TrainingInfor[Timer]}/>
             </div>
             <BotttomPage/>
             </div>
+
+            <Link to="/Contact" className="ChatLogo">                
+                <img  src={Chat} alt="ChatLogo" />
+                </Link>
+            </div>
+        
          
         </div>
     )

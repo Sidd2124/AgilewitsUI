@@ -6,14 +6,25 @@ import CommanHeadre from '../CommonHeader/CommonHeadre'
 
 import BotttomPage from '../BottomPage/BottomPage'
 
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 
 import Bi from './Bi.png'
+
 import IBM from  "./Ibm.png"
 
 import Oracles from './Oracle.png'
 
 import BigDataAnalyst from './Data.png'
+
+import Context from '../Context/Context'
+
+import DropDown from '../DropDown/DropDown'
+
+import Chat from '../Home/chat.png'
+
+import Option from '../Home/Options.png'
+
+import {Link} from 'react-router-dom'
 
 
 
@@ -24,6 +35,11 @@ import BigDataAnalyst from './Data.png'
 
 const Counsulting=()=>{
     const [CounsultingStatus,SetCounsultingStatus]=useState("BussinessIntelligence")
+
+    const { IsActive, SetDropDownStatus, } = useContext(Context)
+    const DropDownStatus = () => {
+        SetDropDownStatus()
+    }
 
     const UpdateBussinessIntelligence = () => {
         SetCounsultingStatus("BussinessIntelligence");
@@ -174,11 +190,17 @@ These courses help you reach the next level in your career as you learn to use b
     };
 
     return(
-        <div className='CounsultingTopLayer'>
+        <div className="ToplAYER">
            <AgilewitsIntro/>
+           <div className="Second">
+            
+           <img className="ChatLogo" src={Option} alt="ChatLogo" onClick={DropDownStatus} />
+
            <div className='CounsultingSecondLayer'>
             <CommanHeadre PageName="Counsulting"/>
             <div className='CounsultingTopics'>
+                
+            {IsActive && <DropDown />}
 <div className='TopicItems'>
     <h3 onClick={UpdateBussinessIntelligence} style={{ color: CounsultingStatus==="BussinessIntelligence"?"white":"#92D5F0" }}>BussinessIntelligence</h3>
 <hr/>
@@ -199,6 +221,11 @@ These courses help you reach the next level in your career as you learn to use b
             <BotttomPage/>
 
            </div>
+           <Link to="/Contact" className="ChatLogo">                
+                <img  src={Chat} alt="ChatLogo" />
+                </Link>
+           </div>
+        
         </div>
     )
 }

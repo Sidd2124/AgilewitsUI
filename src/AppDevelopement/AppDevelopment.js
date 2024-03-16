@@ -18,10 +18,30 @@ import Phones from "./Phones.png"
 
 import Androide from './Android.png'
 
+import { useContext } from "react"
+
+import Context from '../Context/Context'
+
+import DropDown from '../DropDown/DropDown'
+
+import Chat from '../Home/chat.png'
+
+import Option from '../Home/Options.png'
+
 const AppDevelopment=()=>{
+    const { IsActive, SetDropDownStatus, } = useContext(Context)
+    const DropDownStatus = () => {
+        SetDropDownStatus()
+    }
     return(
-        <div className="TopAppDevelopment">
+        <div className="ToplAYER">
            <AgilewitsIntro/>
+
+           <div className="Second">
+            
+           <img className="ChatLogo" src={Option} alt="ChatLogo" onClick={DropDownStatus} />
+
+
            <div className="AboutpageSecondLayer">
 <CommanHeadre PageName="App Development"/>
            <div className='AgilewitsInfo'>
@@ -43,6 +63,8 @@ Agilewit Solutions Inc</h1>
         </div>
         </div>
         <div className="Row">
+            
+        {IsActive && <DropDown />}
             <div className="Customie">
                 <img src={Androide} alt="Androide"/>
 <h2>Easy to Customize</h2>
@@ -67,6 +89,11 @@ Agilewit Solutions Inc</h1>
       </div>
 
         <BotttomPage/>
+           </div>
+
+           <Link to="/Contact" className="ChatLogo">                
+                <img  src={Chat} alt="ChatLogo" />
+                </Link>
            </div>
         </div>
     )

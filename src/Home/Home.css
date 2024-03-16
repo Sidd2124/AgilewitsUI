@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     
+    
 }
 .Title{
     padding: 100px;
@@ -51,7 +52,8 @@ p{
 .ChatLogo{
     display: flex;
     align-self: flex-end;
-    margin-right: 60px;
+    margin-right: 40px;
+   
     
 }
 
